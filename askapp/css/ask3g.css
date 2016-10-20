@@ -1,0 +1,32 @@
+@charset "utf-8"; body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0; padding:0}
+body,button,input,select,textarea{font:normal 30px/45px \5FAE\8F6F\96C5\9ED1,Arial,sans-serif; outline:none}
+
+
+@media screen and (min-width:640px){
+.sectionfix{top:104px;}
+.hometop{height: 100px;}
+.hometop .cen{ height: 100px; width: 216px; padding-left: 56px; background-size: auto;font-size: 38px; line-height: 100px; background-position: left;}
+.padcon{padding:0 22px;}
+.fontit{font-size:26px; line-height:60px;}
+.homeblo{padding:20px; margin-bottom: 20px;}
+.askbox{padding-left: 54px;}
+.askno{width:54px; font-size: 32px;}
+.askq{font-size: 26px; margin-bottom: 20px;}
+.askq h2{font-size: 32px;}
+.aska{font-size: 30px;}
+.usernam{padding-right: 44px;}
+.saypad{padding:0 34px 0 16px; }
+.saypic{width: 27px; height: 25px; background-size: auto;}
+.eyepic{width: 34px; height: 23px; background-size: 34px 20px;}
+.zhuan,.da{ background-size: auto;width: 42px;height: 32px;}
+.fon13{font-size: 16px;}
+.scrolltop{width：25px; height: 25px; background-size: 25px 25px; display: block; right: 22px;}
+.showmore{font-size: 24px;}
+.sk-spinner-fading-circle.sk-spinner {width:40px;height:40px;}
+.sk-spinner-fading-circle .sk-circle:before {width:12.2%;height:25%;}
+.myques{top:70px;}
+.myques dd{padding:20px 40px; border-bottom: 2px;}
+.mytit{font-size:30px;}
+.myfont{font-size:26px;}
+#wrapper{top:68px;}
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html manifest="http://apps.yaolan.com/ask/askapp.manifest">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no"/>
+<title>育儿问答_育儿心得_育儿经验|摇篮网 </title>
+<meta name="keywords" content="育儿问答,育儿心得,育儿经验,专家问答,育儿知识,育儿常识 " />
+<meta name="description" content="摇篮网育儿问答是专业的育儿问答互动平台。在这个育儿问答平台上父母们可以交流育儿心得和育儿经验，可以学习育儿知识和育儿常识，同时还有育儿专家在线解答育儿难题。 " />
+<link rel="stylesheet" type="text/css" href="http://g.yaolanimage.cn/assets/app/ask/css/askapp.css" />
+<script type="text/javascript" src="http://g.yaolanimage.cn/ya/yl.js?d=201407251621"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?aea6a97845b6fa93afb68b36188d5116";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+<header id="header" >
+	<span>提问</span>
+	<a class="sback" href="ask_index.html"></a>
+	<a id="sright_t" class="stop_icon sright_t" href="javascript:void(0);">提交</a>
+</header>
+<!-- /header -->
+<section id="wrapper">
+	<section id="scroller">
+			<section class="sask_area_w">
+				<div class="sask_area">
+					<textarea  id="sask_submit" class="sask_submit">请在此描述问题（至少5个字）</textarea>
+					<p class="sask_area_b clear"><span class="clear"><i></i>匿名</span><em><i id="st_count">0</i>/50</em></p>
+				</div>
+			</section>
+	</section>
+</section>
+<div class="sask_loading_mask" style="display:none;"></div>
+<div class="sask_loading sask_loading_sub" style="display:none;">
+	<p><span>提交中...</span></p>
+</div>
+<!-- /askcon -->
+<script type="text/javascript" src="http://g.yaolanimage.cn/assets/app/ask/js/ovgap.js"></script>
+<!--<script type="text/javascript" src="js/ovgap.js"></script>-->
+<script type="text/javascript" src="http://g.yaolanimage.cn/assets/app/ask/js/zepto.js"></script>
+<script type="text/javascript" src="http://g.yaolanimage.cn/assets/app/ask/js/config.js"></script>
+<!--<script type="text/javascript" src="js/config.js"></script>-->
+<script type="text/javascript">
+//获取用户id
+var userid;
+yl.getAppUserId(function(userId){
+	//alert(userId);
+	userid=userId;
+});
+var saskVal=false,
+	$saskSubmit = document.querySelector('#sask_submit');
+$saskSubmit.addEventListener('input',function(){
+	var saskVal=$(this).val(),
+		saskLen = saskVal.length;
+	if(saskLen>5){
+		//$(this).addClass('sask_submith');
+		if(saskVal.length>=49){
+			$(this).val($(this).val().substring(0, 49));
+		}
+		$('#sright_t').addClass('sright_tsub');
+	}else{
+		$('#sright_t').removeClass('sright_tsub');
+	}
+	$('#st_count').text(saskLen);
+})
+$('#sask_submit').on('focus',function(){
+	if($(this).val()=='请在此描述问题（至少5个字）'){
+		$(this).val('');
+	}
+	$(this).addClass('sask_submith');
+});
+$('#sask_submit').on('blur',function(){
+	if($(this).val()==''){
+		$(this).val('请在此描述问题（至少5个字）');
+	}
+})
+var noName=0;
+$('.sask_area_b span').on('click',function(){
+	if($('.sask_area_b span i').hasClass('sask_ssd')){
+		$('.sask_area_b span i').removeClass('sask_ssd');
+		noName=0;
+	}else{
+		$('.sask_area_b span i').addClass('sask_ssd');
+		noName=1;
+	}
+})
+$('#sright_t').on('click',function(){
+	if($(this).hasClass('sright_tsub')){
+		saskSubmit();
+	}
+})
+function saskSubmit(){
+	var saskVal=$('#sask_submit').val();
+	//alert(saskVal);
+	$('.sask_loading_mask').show();
+	$('.sask_loading').show();
+	$.ajax({
+	    type: 'get',
+	    url: config.askSubmitUrl,
+	    dataType: 'jsonp',
+	    data:{content:saskVal,userid:userid,source:'app',anonym:noName},
+	    success: function(d){
+	    	if(d.code){
+			    $('.sask_loading_mask').hide();
+				$('.sask_loading').hide();
+				//location.href=d.data.url;
+				//console.info(d);
+				window.location.href="ask_detail.html?"+d.data.QuestionID+'?submit';//提问地址跳转
+			}else{
+				$('.sask_loading_mask').hide();
+				$('.sask_loading').hide();
+				alert(d.msg);
+			}
+	    }
+	})
+}
+</script>
+</body>
+</html>

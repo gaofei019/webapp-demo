@@ -1,0 +1,313 @@
+@charset "utf-8"; body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0; padding:0}
+body,button,input,select,textarea{color:#333; font:normal 15px/24px \5FAE\8F6F\96C5\9ED1,Arial,sans-serif; outline:none}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+/*address,caption,cite,code,dfn,em,strong,th,var,i{font:normal 15px/24px \5FAE\8F6F\96C5\9ED1,Arial,sans-serif;}*/
+address,caption,cite,code,dfn,em,strong,th,var,i{font-style:normal;}
+ul,ol{list-style:none;}
+canvas{display: block;}  
+fieldset,img{border:0}
+table{border-collapse:collapse; border-spacing:0}
+a{text-decoration:none; color:#4a4a4a;}
+a:hover{text-decoration:none;}
+/*a:visited{color:#313131;}*/
+.clear:after{content:'\0020'; display:block; height:0; clear:both}
+.clear{*zoom:1}
+.fl{float:left;}
+.fr{float:right;}
+.spr{position: relative;}
+img{display: block;}
+.sab{display: block;position: absolute;}
+body{color:#4a4a4a;background:#f1f1f1;margin:0 auto;min-width:320px;}
+body.f1{background:#fff;}
+header{line-height:58px;color:#fff;text-align: center;font-size: 24px;background:#ff6985;position: absolute;top:0px;left:0px;z-index:2;width:100%;border-bottom:1px solid #ce556c;position: fixed;top:0px;left:0px;}
+header,.headerW{height:58px;}
+#wrapper{position:absolute; z-index:1;top:58px; bottom:0px; left:0px;width:100%;overflow:auto;}
+#scroller{position:relative; z-index:1;-webkit-tap-highlight-color:rgba(0,0,0,0);width:100%;padding:0;transform:translate(0px, 0px) translateZ(0px);}
+.smore,.sback,.sask_dl dd.sask_userIn span,.sask_re span,.sanswer_re_con_b span,.stop_icon,.sask_area_b span i,.sask_inpb,.sask_nothing,.sask_nothing_t{background-repeat:no-repeat;background-position:center center;}
+.sask_re span,.sanswer_re_con_b span{background-position:left center;}
+.no{position: relative;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.smore,.sback,.stop_icon{display:block;width:53px;height:58px;position:absolute;top:0px;}
+.sback{background-image:url(../images/sattr.png);background-size:11px auto;left:0px;}
+.smore{background-image:url(../images/scri.png);background-size:20px auto;right:0px;}
+.sask_title,.sask_area_w{padding:15px 15px 0px;}
+.sask_area_w{position: relative;}
+.sask_dl dt,.sask_dl dd{margin-bottom:5px;}
+.sask_dl dt,.sask_dl dt a{color:#4a4a4a;font-size: 16px;}
+.sask_dl dd,.sask_dl dd a{color:#7a7a7a;font-size: 15px;}
+.sask_dl dd.sask_detail{text-indent: 24px;}
+.sask_dl dd.sask_userIn,.sask_dl dd.sask_userIn a{color:#adacac;font-size: 13px;}
+.sask_dl dd.sask_userIn{height:24px;position: relative;overflow:hidden;}
+.sask_dl dd.sask_userIn em{float:left;padding-left:8px;}
+.sask_dl dd.sask_userIn em:nth-child(1){padding:0px;}
+.sask_dl dd.sask_userIn span{float:right;padding-left:20px;background-image:url(../images/seyes.png);background-size:17px auto;background-position:left center;}
+.sask_re{font-size: 14px;color:#7a7a7a;background:#fff0f1;border:1px solid #ffd0d3;padding:5px 4px;border-radius:5px;text-align: center;}
+.sask_re_left{text-align:left;}
+.sask_re span{color:#de3a59;float:left;padding-left:18px;background-image:url(../images/sdui.png);background-size:14px auto;}
+.sanswer_list_w li{padding:10px 15px 5px;border-bottom:1px dashed #ffd0d3;}
+.sanswer_list{padding:0px 8px 0px;}
+.sanswer_list_w li.sanswer_list_h{border-bottom:none;}
+.sanswer_list_w li.sanswer_list_h .sanswer_list{padding-top: 8px;}
+.sanswer_list_h .sanswer_list{border:1px solid #d9d9d9;border-radius:5px;background:#f6f6f6;}
+.sanswer_list_w li p.sanswer_auther{color:#adacac;font-size: 13px;text-align: right;}
+.sanswer_list_w li p.sanswer_auther span{float: left;color:#ff6985;}
+.sanswer_list_w li p.sanswer_auther span b{margin:0px 4px;font-weight:100;}
+.sanswer_list_w li p.sanswer_auther span em{padding:0px 2px;font-size:13px;color:#fff;background:#ff6985;border-radius: 5px;margin-right:5px;height:18px;line-height: 18px;}
+.sanswer_re_con{font-size: 15px;}
+.sanswer_re_con_b{padding:3px 0px;}
+.sanswer_re_con_b span,.sanswer_re_con_b a{float: right;color:#ff6985;}
+.sanswer_re_con_b span{padding-left:18px;background-image:url(../images/sguan.png);background-size:15px auto;}
+.sanswer_re_con_b a{padding:0px 3px;background:#fff0f1;border-radius:5px;border:1px solid #ffd0d3;}
+.sask_bg{width:100%;height:100%;position:absolute;top:0px;left:0px;display: none;overflow: hidden;background:url(../images/syin.png);}
+.sask_share{position: absolute;bottom:-159px;left:0px;width:100%;background:#f8f8f8;}
+.sask_share_ul{padding:30px 0px 15px;}
+.sask_share_ul li{width:20%;float: left;}
+.sask_share_ul li a{display: block;}
+.sask_share_ul li span{display: block;height:45px;border-radius: 40px;background-position:center center;background-repeat:no-repeat;}
+.sask_share_ul li span{width:45px;margin:0 auto;}
+.sask_share_ul li:nth-child(1) span{background-color:#f36d70;background-image:url(../images/scollect.png);background-size:27px  auto;}
+.sask_share_ul li:nth-child(2) span{background-color:#d9d9d9;background-image:url(../images/sfri.png);background-size:28px  auto;}
+.sask_share_ul li:nth-child(3) span{background-color:#ffdd6a;background-image:url(../images/ssina.png);background-size:31px  auto;}
+.sask_share_ul li:nth-child(4) span{background-color:#6abb4a;background-image:url(../images/swei.png);background-size:34px  auto;}
+.sask_share_ul li:nth-child(5) span{background-color:#28a4e0;background-image:url(../images/sqq.png);background-size:27px  auto;}
+.sask_share_ul li p{font-size: 14px;color:#868686;text-align: center;}
+.sask_share_cancle{display:block;height:44px;line-height: 44px;color:#ff6985;background:#fff;text-align: center;border-top:1px solid #d9d9d9;}
+/*问题详情end*/
+#pullUp{height:44px;position: relative;text-align: center;padding-top: 10px;}
+.pullUpHide{display: none;}
+#pullUp ul{float: left;position:relative;left:50%;}
+#pullUp ul li{position: relative;right:50%;font-size: 15px;}
+#pullUp .pullUpIcon{text-indent:-9999px;}
+#pullUp .pullUpIcon,.pullUpLabel{float: left;height:40px;line-height: 40px;}
+#pullUp .pullUpIcon {width:40px;background:url(../images/pull-icon@2x.png) 0 0 no-repeat;-webkit-background-size:40px 80px; background-size:40px 80px;-webkit-transition-property:-webkit-transform;-webkit-transition-duration:250ms;}
+#pullUp .pullUpIcon  {-webkit-transform:rotate(-180deg) translateZ(0);transform:rotate(-180deg) translateZ(0);}
+#pullUp.flip .pullUpIcon {-webkit-transform:rotate(0deg) translateZ(0);transform:rotate(0deg) translateZ(0);}
+#pullUp.loading .pullUpIcon {background-position:0 100%;-webkit-transform:rotate(0deg) translateZ(0);-webkit-transition-duration:0ms;-webkit-animation-name:loading;-webkit-animation-duration:1s;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:linear;}
+@-webkit-keyframes loading {from { -webkit-transform:rotate(0deg) translateZ(0); }to { -webkit-transform:rotate(360deg) translateZ(0); }}
+/*下拉刷新效果end*/
+.sask_loading_mask{width:100%;height:100%;position: absolute;top:0px;left:0px;z-index:100;background:url(../images/syin.png);}
+.sask_loading{position: absolute;top:50%;left:50%;width:143px;height:132px;margin-top:-66px;margin-left:-72px;background:#fff;border-radius: 5px;z-index:6;}
+.sask_loading p{padding-top: 20px;}
+.sask_loading p img{width:69px;display: block;margin:0 auto;}
+.sask_loading p span{display: block;text-align: center;color:#646464;font-size:18px;padding-top:5px;}
+.sask_loading p img{-webkit-transform:translate(0px, 0px);-webkit-transition-duration:0ms;-webkit-animation-name:pageloading;-webkit-animation-duration:1s;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:linear}
+@-webkit-keyframes pageloading {
+0%   {-webkit-transform:translate(0px, 0px);transform:translate(0px, 0px);}
+25%  {-webkit-transform:translate(-10px, 0px);transform:translate(-10px, 0px);}
+50%  {-webkit-transform:translate(0px, 0px);transform:translate(0px, 0px);}
+75%  {-webkit-transform:translate(10px, 0px);transform:translate(10px, 0px);}
+100% {-webkit-transform:translate(0px, 0px);transform:translate(0px, 0px);}
+}
+/*加载动画end*/
+.sseach{right:43px;background-image:url(../images/szoom.png);background-size:22px auto;}
+.sseach_s{right:0px;}
+.suser_w{right:0px;background-image:url(../images/suser.png);background-size:23px auto;}
+.sright_t{width:70px;text-align: center;color:#ffbec8;right:0px;font-size:17px;}
+.sright_tno,.sright_tsub{color:#fff;}
+/*右侧图标end*/
+.sask_area{background:#fff;border-radius:5px;padding:10px 10px 10px;}
+.sask_submit{width:100%;border:0 none;color:#b1b1b1;height:180px;}
+.sask_area_b{height:30px;line-height:30px;color:#b1b1b1;}
+.sask_area_b span{width:120px;}
+.sask_area_b span,.sask_area_b span i{float:left;display: block;}
+.sask_area_b em{float: right;}
+.sask_area_b span i{width:15px;height:15px;margin:7px 5px 0px 0px;border-radius:4px;border:1px solid #ff6985;}
+.sask_area_b span i.sask_ssd{background-image:url(../images/ssd.png);background-size:12px auto;}
+.sask_loading_sub{height:auto;}
+.sask_loading_sub p{padding: 10px 0px;}
+/*提问页面end*/
+.sask_seacher{border-radius: 5px;border:1px solid #d9d9d9;padding:0px 60px 0px 10px;position: relative;background:#fff;margin-bottom:15px;}
+.sask_inp{cursor:pointer;width:100%;height:38px;line-height:38px;display:block;font-size:18px;color:#b1b1b1;border:0 none;background:none;}
+.sask_inpb{position:absolute;width:50px;height:38px;top:0px;right:0px;border-top-right-radius:5px;border-bottom-right-radius:5px;background-color:#4cd2ba;background-image:url(../images/szoom.png);background-size:19px auto;}
+.sask_nothing{padding-top:158px;background-image:url(../images/sseach_t.png);background-size:167px auto;background-position:center 40px;}
+.sask_nothing_t{height:66px;background-image:url(../images/sseach_b.png);background-size:140px auto;}
+.sask_nothing_m{background-image:url(../images/nothing_m.png);background-size:141px auto;background-position:center 90px;}
+.sask_nothing a{display: block;margin:0 auto;width:125px;height:31px;background:#ff6985;border-radius:5px;color:#fff;text-align: center;line-height:31px;}
+.sask_nothing_error{background-image:url(../images/serror.png);background-size:227px auto;padding-top:142px;}
+.sask_hot{font-size:15px;}
+.sask_hot dt{font-size:16px;color:#ff6985;}
+.sask_hot dd{padding:10px 0px;text-align: center;}
+.sask_hot dd a{float:left;color:#888989;background:#fff;border-radius:4px;border:1px solid #d9d9d9;padding:2px 8px;margin:0px 3px 5px 3px;}
+/*搜索页面end*/
+.myques_c{border-bottom:dashed 1px #ffd0d3; background:#fff;}
+.myques_c a{display: block;padding:8px 20px;}
+.mytit{color:#4a4a4a;font-size: 15px; font-weight: normal; padding: 0; margin: 0; line-height: 150%;}
+.myfont{font-size:13px; color:#adacac; padding-top:10px; line-height: 120%;}
+.marfri{margin-right:33px;}
+.mfri{float:right; display:block}
+.myques_w{padding-top:7px;}
+/*我的问题end*/
+.homeblohide{display: none;}
+
+
+
+
+.sask_submith,.sask_inph{color:#4a4a4a;}
+/*首页css*/
+.hometop{width: 100%; height: 50px; border-bottom:2px #ffd0d3 solid;background: #fff0f1;position:absolute;top:35px;left:0px;width:100%;z-index:3;}
+.hometop .cen{display: block;}
+.hometop .cen em{display:block; margin:0 auto; width:108px;padding-left:29px; height: 50px; background: url("../images/hometop.png") no-repeat 0 center; background-size:22px 22px; line-height: 50px; color: #de3a59; font-size: 19px;}
+.bghui{background: #f1f1f1;}
+.header_index{position: relative;}
+.sectionfix{position:fixed; left:0; top:52px; bottom: 0; overflow-y:auto;}
+.padcon{padding:0 11px;}
+.fontit{font-size: 15px;height:40px;line-height: 40px; color:#de3a59; font-weight: normal;}
+#pagecont li a{display: block;border: solid 1px #d9d9d9; background: #fff;  border-radius: 5px; padding: 10px; word-break: break-all;}
+#pagecont li{margin-top: 10px;}
+#pagecont li:nth-child(1){margin-top:0px;}
+.askbox{padding-left: 27px; position:relative;}
+.askno{width:27px;display: block; position: absolute; left: 0; font-size: 18px;top:-1px;}
+.corlan{color: #4cd1ba;}
+.corfen,.corfen a{color: #ff6985;}
+.fon13{font-size: 13px;}
+.corfens span,.corfens em{float: left;margin-left:4px;}
+.corfen span.zhuan,.corfen span.da{width:18px;height:18px;background:#ff6985;color:#fff;border-radius:5px;line-height:18px;text-align: center;margin-top: 2px;}
+.askq{border-bottom:dashed 1px #ffd0d3; word-break:break-all; line-height: 180%; margin-bottom: 10px; font-size:13px; color: #b1b1b1; padding: 0}
+.askq h2{font-weight: normal; font-size: 16px; color: #4a4a4a;}
+.aska{word-break:break-all; line-height: 150%; font-size:15px; color: #7a7a7a; padding:0}
+.usernam{ padding-right: 12px;}
+.saypad{padding:0 10px 0 8px;}
+.saypic{width: 14px; height: 13px; display: inline-block; vertical-align: middle; background: url(../images/kuang.png) no-repeat; background-size: 14px 13px;}
+.eyepic{width: 17px; height: 13px; display: inline-block;margin-right:3px;vertical-align: middle; background: url(../images/eye.png) no-repeat; background-size: 17px 10px;}
+.scrolltop{cursor:pointer;width: 35px; height: 35px; position: fixed; right: 12px; bottom: 10px;z-index: 9; background: url(../images/scrolltop.png) no-repeat; background-size: 35px 35px;display: none;}
+.showmore{text-align:center; display:block;line-height: 150%; color: #7a7a7a; font-size: 14px; width: 100%;}
+.pullUpLabel{font-size: 12px;}
+.myques{border-bottom:dashed 1px #ffd0d3; padding:8px 20px;}
+.mytit{color:#4a4a4a;font-size: 15px; font-weight: normal; padding: 0; margin: 0; line-height: 150%;}
+.myfont{font-size:13px; color:#adacac; padding-top:10px; line-height: 120%;}
+.marfri{margin-right:33px;}
+.mfri{float:right; display:block}
+.none{display: none;}
+.header_fi{position: fixed;top:0px;left:0px;width:100%;}
+.header_fi{top:58px;}
+/*index页面end*/
+@media screen and (min-width:640px){
+body,button,input,select,textarea{font:normal 30px/45px \5FAE\8F6F\96C5\9ED1,Arial,sans-serif; outline:none;}
+header{height:58px;line-height:58px;font-size: 24px;}
+#wrapper{top:58px;}
+.sask_dateil_w{position:fixed;top:58px;}
+.smore,.sback,.stop_icon{width:56px;height:58px;}
+.sback{background-size:22px auto;}
+.smore{background-size:40px auto;}
+.sask_title,.sask_area_w{padding:30px 30px 0px;}
+.sask_dl dt,.sask_dl dd{margin-bottom:10px;}
+.sask_dl dt,.sask_dl dt a{font-size: 32px;}
+.sask_dl dd,.sask_dl dd a{font-size: 30px;}
+.sask_dl dd.sask_detail{text-indent: 40px;}
+.sask_dl dd.sask_userIn,.sask_dl dd.sask_userIn a{font-size: 26px;}
+.sask_dl dd.sask_userIn{height:48px;}
+.sask_dl dd.sask_userIn em{padding-left:16px;}
+.sask_dl dd.sask_userIn span{padding-left:40px;background-size:34px auto;}
+.sask_re{font-size: 28px;padding:10px 8px;border-radius:10px;}
+.sask_re span{padding-left:36px;background-size:28px auto;}
+.sanswer_list_w li{padding:20px 30px 10px;}
+.sanswer_list{padding:0px 16px 0px;}
+.sanswer_list_w li.sanswer_list_h .sanswer_list{padding-top: 16px;}
+.sanswer_list_h .sanswer_list{border-radius:10px;}
+.sanswer_list_w li p.sanswer_auther{font-size: 26px;}
+.sanswer_list_w li p.sanswer_auther span b{margin:0px 8px;}
+.sanswer_list_w li p.sanswer_auther span em{padding:0px 6px;font-size:26px;border-radius:10px;margin-right:10px;height:36px;line-height: 36px;}
+.sanswer_re_con{font-size: 30px;}
+.sanswer_re_con_b{padding:6px 0px;}
+.sanswer_re_con_b span{padding-left:36px;background-size:30px auto;}
+.sanswer_re_con_b a{padding:0px 6px;border-radius:10px;}
+.sask_share{bottom:-318px;}
+.sask_share_ul{padding:60px 0px 30px;}
+.sask_share_ul li span{height:90px;border-radius: 80px;}
+.sask_share_ul li span{width:90px;}
+.sask_share_ul li:nth-child(1) span{background-size:54px  auto;}
+.sask_share_ul li:nth-child(2) span{background-size:56px  auto;}
+.sask_share_ul li:nth-child(3) span{background-size:62px  auto;}
+.sask_share_ul li:nth-child(4) span{background-size:68px  auto;}
+.sask_share_ul li:nth-child(5) span{background-size:54px  auto;}
+.sask_share_ul li p{font-size: 28px;}
+.sask_share_cancle{height:88px;line-height: 88px;}
+/*问题详情end*/
+#pullUp{height:88px;padding-top: 20px;}
+#pullUp ul li{font-size:30px;}
+#pullUp .pullUpIcon,.pullUpLabel{height:80px;line-height: 80px;}
+#pullUp .pullUpIcon {width:80px;background:url(../images/pull-icon@2x.png) 0 0 no-repeat;-webkit-background-size:80px 160px; background-size:80px 160px;-webkit-transition-property:-webkit-transform;-webkit-transition-duration:500ms;}
+#pullUp.loading .pullUpIcon {background-position:0 100%;-webkit-animation-duration:4s;}
+/*下拉刷新效果end*/
+.sask_loading{width:286px;height:264px;margin-top:-132px;margin-left:-148px;border-radius: 10px;z-index:6;}
+.sask_loading p{padding-top: 40px;}
+.sask_loading p img{width:138px;}
+.sask_loading p span{font-size:36px;padding-top:10px;}
+.sask_loading p img{-webkit-animation-name:pageloading;-webkit-animation-duration:2s;}
+@-webkit-keyframes pageloading {
+0%   {-webkit-transform:translate(0px, 0px);transform:translate(0px, 0px);}
+25%  {-webkit-transform:translate(-20px, 0px);transform:translate(-20px, 0px);}
+50%  {-webkit-transform:translate(0px, 0px);transform:translate(0px, 0px);}
+75%  {-webkit-transform:translate(20px, 0px);transform:translate(20px, 0px);}
+100% {-webkit-transform:translate(0px, 0px);transform:translate(0px, 0px);}
+}
+/*加载动画end*/
+.sseach{right:86px;background-size:43px auto;}
+.sseach_s{right:0px;}
+.suser_w{right:0px;background-size:45px auto;}
+.sright_t{width:140px;right:0px;font-size:34px;}
+/*右侧图标end*/
+.sask_area{border-radius:10px;padding:20px 20px 20px;}
+.sask_submit{height:360px;}
+.sask_area_b{height:60px;line-height:60px;}
+.sask_area_b span i{width:30px;height:30px;margin:14px 10px 0px 0px;border-radius:8px;border:1px solid #ff6985;}
+.sask_area_b span i.sask_ssd{background-size:23px auto;}
+.sask_loading_sub{height:auto;}
+.sask_loading_sub p{padding: 20px 0px;}
+/*提问页面end*/
+.sask_seacher{border-radius: 10px;border:1px solid #d9d9d9;padding:0px 120px 0px 20px;margin-bottom:30px;}
+.sask_inp{height:76px;line-height:76px;display:block;font-size:36px;}
+.sask_inpb{width:100px;height:76px;border-top-right-radius:10px;border-bottom-right-radius:10px;background-size:38px auto;}
+.sask_nothing{padding-top:316px;background-size:334px auto;background-position:center 80px;}
+.sask_nothing_t{height:132px;background-size:280px auto;}
+.sask_nothing_m{background-size:282px auto;background-position:center 180px;}
+.sask_nothing a{width:250px;height:62px;border-radius:10px;line-height:62px;}
+.sask_nothing_error{background-size:457px auto;padding-top:284px;}
+.sask_hot{font-size:30px;}
+.sask_hot dt{font-size:32px;}
+.sask_hot dd{padding:20px 0px;}
+.sask_hot dd a{border-radius:8px;border:1px solid #d9d9d9;padding:4px 16px;margin:0px 6px 10px 6px;}
+/*搜索页面end*/
+.myques_w{padding-top:14px;}
+.myques_c a{padding:16px 40px;}
+.mytit{font-size: 30px;padding: 0; margin: 0; line-height: 150%;}
+.myfont{font-size:26px;padding-top:20px; line-height: 120%;}
+.marfri{margin-right:66px;}
+/*我的问题end*/
+
+
+
+
+
+
+
+.sask_submith,.sask_inph{color:#4a4a4a;}
+/*首页css*/
+.hometop{height: 100px;top:58px;}
+.hometop .cen em{display:block;height: 100px; width: 216px; padding-left: 56px; background-size: auto;font-size: 38px; line-height: 100px; background-position: left;}
+.padcon{padding:0 22px;}
+.fontit{font-size:26px;height:60px;line-height:60px;}
+#pagecont li a{padding:20px; margin-top: 20px;}
+.askbox{padding-left: 54px;}
+.askno{width:54px; font-size: 32px;}
+.askq{font-size: 26px; margin-bottom: 20px;}
+.askq h2{font-size: 32px;}
+.aska{font-size: 30px;}
+.usernam{padding-right: 44px;}
+.saypad{padding:0 34px 0 16px;}
+.saypic{width: 27px; height: 25px; background-size: auto;}
+.eyepic{width: 34px; height: 23px; background-size: 34px 20px;margin-right:6px;}
+.fon13{font-size: 26px;}
+.corfens span,.corfens em{margin-left:8px;font-size:}
+.corfen span.zhuan,.corfen span.da{width:36px;height:36px;border-radius:10px;line-height:36px;margin-top: 4px;}
+.scrolltop{width:50px; height: 50px; background-size: 50px 50px; display: block; right: 22px;}
+.showmore{font-size: 24px;}
+.sk-spinner-fading-circle.sk-spinner {width:40px;height:40px;}
+.sk-spinner-fading-circle .sk-circle:before {width:12.2%;height:25%;}
+.myques{top:70px;}
+.myques dd{padding:20px 40px; border-bottom: 2px;}
+.mytit{font-size:30px;}
+.myfont{font-size:26px;}
+.header_f{position: fixed;top:0px;left:0px;width:100%;}
+.header_fi{top:58px;}
+/*index页面end*/
+}
